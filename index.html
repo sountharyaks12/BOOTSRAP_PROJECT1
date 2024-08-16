@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOTSSTRAP WEBSITE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+  <style>
+    #nameColor {
+      color: rgb(168, 21, 213);
+      font-weight: bold;
+    }
+  </style>
+
+  <div>
+    <div class="  d-block d-md-none ">
+      <nav class="navbar d-block d-md-none navbar-expand navbar-light bg-light border border-5 mx-1">
+        <div class="my-2 fs-1 ">
+          <div>
+            <h1>Hello <strong id="nameColor"> Sountharya K S</strong></h1>
+          </div>
+          <div class="d-flex">
+            <div class="nav-item ">
+              <a class="nav-link dropdown-toggle ms-auto" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown">
+                <i class="fa-solid fa-location-dot"></i>
+                TamilNadu,India
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Kanyakumari</a></li>
+                <li><a class="dropdown-item" href="#">Coimbatore</a></li>
+                <li><a class="dropdown-item" href="#">Chennai</a></li>
+              </ul>
+            </div>
+            <!-- <div class="col"></div> -->
+
+            <div class="collapse navbar-collapse h-50 w-50" id="mynavbar">
+              <form class="ms-auto shadow-sm border border-1 p-2 d-flex d-block d-md-none">
+                <i class="fa-solid fa-cart-shopping " id="shopping-trolly"></i>
+                <style>
+                  #shopping-trolly {
+                    font-size: 40px;
+                  }
+                </style>
+
+              </form>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+
+            <div class="col">
+              <div class=" d-block d-md-none d-flex justify-content-end">
+                <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  <i class="bi bi-list "></i>
+                </button>
+              </div>
+              <div class="collapse border border-5 " id="collapseExample">
+                <div class="d-grid gap-1">
+                  <button class="btn btn-light border border-dark" type="button">Sort</button>
+                  <button class="btn btn-light border border-dark" type="button">Ratings</button>
+                  <button class="btn btn-light border border-dark" type="button">Cost Per Person</button>
+                  <button class="btn btn-light border border-dark" type="button">Order Type</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </nav>
+      </nav>
+    </div>
+
+    <!--Search & Filters starts here..-->
+
+    <div class="navbar bg-body-tertiary row p-3 d-block d-md-none">
+      <div class="d-flex">
+        <form>
+          <div class="input-group d-flex border border-0 col">
+            <span class="input-group-text rounded-pill shadow-sm"><i class="bi bi-search "></i></span>
+            <input type="text" class="form-control border border-0 rounded-pill p-1 shadow-sm " placeholder="Search"
+              aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+        </form>
+        <div class="col"></div>
+        <!-- <div class="col"></div> -->
+        <div class="col">
+          <div class=" d-block d-md-none d-flex justify-content-end">
+            <button class="btn btn-light shadow-sm" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+              <i class="fa-solid fa-utensils mt-1"></i>&nbsp;
+              Filter
+            </button>
+          </div>
+          <div class="collapse border border-5" id="collapseExample2">
+            <div class="d-grid gap-1 ">
+              <button class="btn btn-light border-dark " type="button">Price</button>
+              <button class="btn btn-light border-dark" type="button">Most relevant</button>
+              <button class="btn btn-light border-dark" type="button">Offers</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cuisines Carousal for small device-->
+
+    <div id="carouselExampleControls" class="carousel slide mt-1 w-100 p-3 d-block d-md-none" data-bs-ride="carousel">
+      <div class="carousel-inner w-100">
+        <div class="carousel-item active row " data-bs-interval="2000">
+          <div class="d-flex justify-content-around text-center col">
+            <div>
+              <img src="./beverages.jpg" class="rounded-circle" height="60px" width="60px" alt="beverages">
+              <h5>Beverages</h5>
+            </div>
+            <div>
+              <img src="./pizza.png" class="rounded-circle" height="60px" width="60px" alt="pizza">
+              <h5>Pizza</h5>
+            </div>
+            <div>
+              <img src="./burger.png" class="rounded-circle" height="60px" width="60px" alt="burger">
+              <h5>Burger</h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item  row " data-bs-interval="2000">
+          <div class="d-flex justify-content-around text-center col">
+            <div>
+              <img src="./chinese.png" class="rounded-circle" height="60px" width="60px" alt="beverages">
+              <h5>Chinese</h5>
+            </div>
+            <div>
+              <img src="./maxicon.png" class="rounded-circle" height="60px" width="60px" alt="pizza">
+              <h5>Maxicon</h5>
+            </div>
+            <div>
+              <img src="./salad.png" class="rounded-circle" height="60px" width="60px" alt="burger">
+              <h5>Salad</h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item row " data-bs-interval="2000">
+          <div class="d-flex justify-content-around text-center col">
+            <div>
+              <img src="./thai.jpg" class="rounded-circle" height="60px" width="60px" alt="beverages">
+              <h5>Thai</h5>
+            </div>
+            <div>
+              <img src="European.png" alt="european" class="rounded-circle" height="60px" width="60px">
+              <h5>European</h5>
+            </div>
+            <div>
+              <img src="french.jpg" alt="french" height="60px" width="60px" class="rounded-circle">
+              <h5>French</h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item row" data-bs-interval="2000">
+          <div class="d d-flex justify-content-around text-center col">
+            <div><img src="./lebanon.png" alt="lebanon" height="60px" width="60px" class="rounded-circle">
+              <h5>Lebonan</h5>
+            </div>
+            <div><img src="./fishh.jpg" alt="Fish" height="60px" width="60px" class="rounded-circle">
+              <h5>Fish</h5>
+            </div>
+            <div><img src="./one.png" alt="indian" height="60px" width="60px" class="rounded-circle">
+              <h5>Indian</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- </div> -->
+    <!--Carousal big slide original-->
+
+    <div id="carouselExampleInterval" class="carousel slide d-block d-md-none w-100 mt-0 p-4" data-bs-ride="carousel">
+      <div class="carousel-inner  mt-1">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="./enjoy.jpg" class="d-block w-100 mx-2 my-2" alt="poster 1" width="50px" height="350px">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./fresh hot.avif" class="d-block w-100 mx-3 my-2 " alt="poster 2" style="width: 10px;"
+            height="350px">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./delicious.avif" class="d-block w-100 mx-3 my-2" alt="poster 3" width="700px" height="350px">
+        </div>
+        <div class="carousel-item p-1" data-bs-interval="2000">
+          <img src="./pizza time.avif" class="d-block w-100 mx-3 my-2" alt="poster final" height="350px" width="700px">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--Favorite for sountharya-->
+    <div class=" mt-0 mx-5">
+      <h3 class="d-block d-md-none ">Favorite for Sountharya K S</h3>
+
+      <div class="row d-block d-md-none">
+
+        <div class=" container-fluid row mt-4 m-2">
+          <img class="col-5" src="./g1.jfif" alt="food zone" height="120px">
+          <div class="col-7 px-4">
+            <span> <b> Food Zone </b></span>
+            <p>Delivery</p>
+            <span>
+              <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+              4.1
+            </span>
+            <span>24hrs</span>
+            <p>My Order:<b class="text-success">$499</b></p>
+          </div>
+        </div>
+
+        <div class="container-fluid row mt-2 m-2">
+          <img class="col-5" src="./g2.jfif" alt="food zone" height="120px">
+          <div class="col-7 px-4">
+            <span> <b>Maha Food Bazaar</b></span>
+            <p>Delivery</p>
+            <span>
+              <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+              4.1
+            </span>
+            <span>24hrs</span>
+            <p>My Order:<b class="text-success">$499</b></p>
+          </div>
+        </div>
+        <div class=" container-fluid row mt-2 m-2 bg-light">
+          <img class="col-5" src="./superior burger.jpg" alt="food zone" height="120px">
+          <div class="col-7 px-4">
+            <span> <b> Superior Burger </b></span>
+            <p>Delivery</p>
+            <span>
+              <i class="fa-solid fa-star " style="color: goldenrod;"></i>
+              4.1
+            </span>
+            <span>24hrs</span>
+            <p>My Order:<b class="text-success">$499</b></p>
+          </div>
+        </div>
+        <div class=" container-fluid row mt-2 m-2">
+          <img class="col-5" src="./pizza.png" alt="food zone" height="120px">
+          <div class="col-7 px-4">
+            <span> <b>Albertson</b></span>
+            <p>Delivery</p>
+            <span>
+              <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+              4.1
+            </span>
+            <span>24hrs</span>
+            <p>My Order:<b class="text-success">$499</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Desktop view-->
+
+    <!-- <div class="row border border-5 m-0 d-none d-md-block"> -->
+    <nav class="navbar  d-none d-md-block navbar-expand bg-body-tertiary border border-5 ">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="#"><img class="col-auto" src="./deliver.jpeg" alt="deliverImage "
+            height="40px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown col-1">
+              <a class="nav-link dropdown-toggle shadow-sm" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-location-dot"></i> Rio De Jeneiro,Br
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Australia</a></li>
+                <li><a class="dropdown-item" href="#">Antarctica</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+        <form class="d-flex justify-content-end col-2 mx-2">
+          <i class="fa-solid fa-magnifying-glass mt-2 shadow-sm"></i>
+          <input class="form-control col-auto me-2 pl-5 border border-0 shadow-sm" type="search" placeholder="Search"
+            aria-label="Search">
+          <select class="form-select w-50 mx-2 shadow-sm col-auto" aria-label="Default select example">
+            <!-- <img src="./languageicon.png" alt="lang"> -->
+            <option selected>Eng</option>
+            <option value="1">Tamil</option>
+            <option value="2">Telugu</option>
+          </select>
+          <div class="btn px-4 mx-2 shadow-sm col-auto"><i class="fa-solid fa-cart-shopping"></i></div>
+          <button class="btn  px-4 shadow-sm col-auto" id="login-button">Login</button>
+        </form>
+
+      </div>
+    </nav>
+    <!-- </div> -->
+    <style>
+      #login-button {
+        background-color: #2e004d;
+        color: white;
+        /* border: #2e004d; */
+      }
+    </style>
+
+    <!--Cuisines-->
+
+    <div class="container-fluid row shadow-sm border border-0">
+
+      <div class="col-2 img-center d-flex ml-1 bg-light d-none d-md-block shadow-sm border border-5 ">
+        <h4 class="mt-2">Cuisines</h4>
+
+        <div class="input-group ">
+          <span class="input-group-text border border-0 shadow-sm" id="basic-addon1">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input type="text" class="form-control border border-0 shadow-sm" placeholder="Search for cuisines"
+            aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <!-- </div> -->
+        <div class="row pt-3 ">
+          <div class="mt-2 d-flex">
+            <img src="./beverages.jpg" alt="." class="rounded-circle" height="40px" width="40px">
+            <span>Juice</span>
+          </div>
+          <div class="mt-2 d-flex">
+            <img src="./pizza.png" alt="pizza" class="rounded-circle my-1" height="40px" width="40px">
+            <span>Pizza</span>
+          </div>
+          <div class="mt-2 d-flex">
+            <img src="./burger.png" alt="burger" height="40px" width="40px" class="rounded-circle my-1">
+            <span>Burger</span>
+          </div>
+          <div class="mt-2 d-flex">
+            <img src="./chinese.png" alt="chinese" class="rounded-circle my-1" height="40px" width="40px">
+            <span>Chinese</span>
+          </div>
+          <div class="mt-2 d-flex">
+            <img src="./European.png" alt="european" height="40px" width="40px" class="rounded-circle my-1 ">
+            <span>European</span>
+          </div>
+          <div class="mt-2 d-flex">
+            <img src="./french.jpg" alt="french" height="40px" width="40px" class="rounded-circle my-1">
+            <span>French</span>
+          </div>
+          <div class="mt-2 d-flex">
+            <img src="./lebanon.png" alt="lebanon" height="40px" width="40px" class="rounded-circle my-1">
+            <span>Lebanon</span>
+          </div>
+          <div class="mt-2 d-flex">
+            <img src="./maxicon.png" alt="maxicon" height="40px" width="40px" class="rounded-circle my-1">
+            <span>Maxico</span>
+          </div>
+          <div class="mt-2 d-flex">
+            <img src="./thai.jpg" alt="thai" height="40px" width="40px" class="rounded-circle my-1">
+            <span>Thai</span>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        #carousal-offer {
+          background-color: #4d9900;
+          width: 60px;
+          padding: 5px;
+          font-size: 15px;
+        }
+      </style>
+
+      <div class="col-10 ">
+        <div class=" d-none d-md-block">
+          <nav class="navbar">
+            <nav aria-label="breadcrumb">
+              <li class="breadcrumb">
+                <span class="breadcrumb-item active">Home</span>
+                <span class="breadcrumb-item text-primary " aria-current="page">Restaurants</span>
+              </li>
+            </nav>
+            <nav class="navbar">
+              <button class=" btn btn-light mx-2">sort</button>
+              <button class=" btn btn-light mx-2">Ratings</button>
+              <button class="btn btn-light mx-2">Cost Per Person</button>
+              <button class="btn btn-light mx-2">Order Type</button>
+            </nav>
+          </nav>
+          <div class="row">
+            <div class="card col border border-0">
+              <img class="card-img" src="./c1.jpeg" alt="." height="200px ">
+              <div class="card-img-overlay text-white">
+                <h4 class="card-title text-center" id="carousal-offer">OFFER</h4>
+                <h2 class="card-title text-white ">50% off</h2>
+                <p class="card-text">Exclusive Offer On All Cuisines</p>
+                <h2 class="card-text fs-3">ALBERTSONS</h2>
+              </div>
+            </div>
+            <div class="card col border border-0">
+              <img class="card-img" src="./c2.jpeg" alt="" height="200px">
+              <span class="card-img-overlay text-white ">
+                <h4 class="card-title text-center" id="carousal-offer">OFFER</h4>
+                <h2 class="card-title text-white">50% off</h2>
+                <p class="card-text">Exclusive Offer On All Cuisines</p>
+                <h2 class="card-text fs-3">ALBERTSONS</h2>
+              </span>
+            </div>
+            <div class="card col border border-0">
+              <img class="card-img-" src="./c3.jpeg" alt="" height="200px">
+              <span class="card-img-overlay text-white">
+                <h4 class="card-title text-center" id="carousal-offer">OFFER</h4>
+                <h2 class="card-title text-white">50% off</h2>
+                <p class="card-text">Exclusive Offer On All Cuisines</p>
+                <h2 class="card-text fs-3">ALBERTSONS</h2>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!--Recomended restaurants-->
+
+        <div class="m-3 col-12 d-none d-md-block">
+          <div class="row">
+            <h5>Recommended Restaurants</h5>
+          </div>
+          <div class="">
+            <div class="row mt-2 ">
+              <img class="col-2 rounded-3" src="./g1.jfif" height="150px" alt="img1">
+              <div class="col-2">
+                <span class="row"><b>Food Zone</b></span>
+                <span class="row">
+                  <p>Delivery</p>
+                </span>
+                <span><i class="fa-solid fa-star"></i>4.1</span>&nbsp;
+                <span>19hrs</span>
+                <div>My Order:<b class="text-success">$500</b></div>
+              </div>
+              <img class="col-2" src="./g2.jfif" height="150px" alt="img2">
+              <div class="col-2">
+                <span class="row"><b>Tasty Dosa </b></span>
+                <span class="row">
+                  <p>Delivery</p>
+                </span>
+                <span><i class="fa-solid fa-star"></i>4.5 49hrs</span>
+                <div>My Order: <b class="text-success">$600</b></div>
+              </div>
+              <img class="col-2" src="./g3.png" height="150px" alt="img3">
+              <div class="col-2">
+                <span><b>Diet zone</b></span>
+                <span class="row">
+                  <p>Delivery</p>
+                </span>
+                <span><i class="fa-solid fa-star"></i>4.2</span>
+                <span>29hrs</span>
+                <div>My Order:<b class="text-success">$400</b></div>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <img class="col-2 mt-2" src="./g4.jpg" height="150px" alt="img4">
+              <div class="col-2"><span><b>Chicky </b></span>
+                <span class="col">
+                  <p>Delivery</p>
+                </span>
+                <span><i class="fa-solid fa-star"></i>4.3</span>
+                <span>34hrs</span>
+                <div>My Order:<b class="text-success">$350</b></div>
+              </div>
+              <img class="col-2 mt-2" src="./g5.jpg" height="150px" alt="img5">
+              <div class="col-2">
+                <span><b>Albertson</b></span>
+                <span class="col">
+                  <p>Delivery</p>
+                </span>
+                <span><i class="fa-solid fa-star"></i>4.0</span>
+                <span>12hrs</span>
+                <div>My Order:<b class="text-success">$499</b></div>
+              </div>
+              <img class="col-2 mt-2" src="./g6.png" height="150px" alt="img6">
+              <div class="col-2"><span><b>Angels</b></span>
+                <span class="col">
+                  <p>Delivery</p>
+                </span>
+                <span><i class="fa-solid fa-star"></i>4.2</span>
+                <span>2hrs</span>
+                <div>My Order:<b class="text-success">$480</b></div>
+              </div>
+            </div>
+            <div class="row mt-2">
+              <img class="col-2 mt-2" src="./g7.jpg" height="150px" alt="img7">
+              <div class="col-2">
+                <span class="row"><b>Mint Fresh</b></span>
+                <span class="row">
+                  <p>Delivery</p>
+                </span>
+                <span><i class="fa-solid fa-star"></i>4.4</span>
+                <span>4hrs</span>
+                <div>My Order:<b class="text-success">$599</b></div>
+              </div>
+              <img class="col-2 mt-2" src="./g8.avif" height="150px" alt="img8">
+              <div class="col-2">
+                <span><b>Pizza Hut</b></span>
+                <span>
+                  <p>Delivery</p>
+                </span>
+                <span><i class="fa-solid fa-star"></i>4.3</span>
+                <span>24hrs</span>
+                <div>My Order:<b class="text-success">$450</b></div>
+              </div>
+              <img class="col-2 mt-2" src="./g9.jpg" height="150px" alt="img9">
+              <div class="col-2 ">
+                <span class="row1"><b>Rice Zone</b></span>
+                <span class="row-2">
+                  <p>Delivery</p>
+                </span>
+                <span class="row-3"><i class="fa-solid fa-star"></i>5.0</span>
+                <span class="row-3">24hrs</span>
+                <div class="row-4">My Order:<b class="text-success">$600</b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
